@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,10 +16,16 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainUpdel">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/chelsea_fc" />
     <TextView
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello welcome to Update and Delete" />
+        android:text="Berikut detail pemain ChelseaFC yang Anda pilih" />
     <EditText
         android:id="@+id/updel_name"
         android:layout_marginTop="20dp"
@@ -23,31 +34,37 @@
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_dob"
+        android:layout_marginTop="5dp"
         android:hint="Date of Birth"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_birthplace"
+        android:layout_marginTop="5dp"
         android:hint="Birthplace"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_height"
+        android:layout_marginTop="5dp"
         android:hint="Height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_weight"
+        android:layout_marginTop="5dp"
         android:hint="Weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_position"
+        android:layout_marginTop="5dp"
         android:hint="Position"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <EditText
         android:id="@+id/updel_number"
+        android:layout_marginTop="5dp"
         android:hint="Number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -63,3 +80,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>
+</ScrollView>

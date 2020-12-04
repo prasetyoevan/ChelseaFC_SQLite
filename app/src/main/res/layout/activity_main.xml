@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,10 +12,16 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/chelsea_fc" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplikasi Daftar Pemain ChelseaFC menggunakan SQLite" />
+        android:text="Aplikasi Daftar Pemain ChelseaFC menggunakan SQLite"
+        android:layout_marginTop="50dp" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,5 +34,7 @@
         android:text="tampilkan data pemain"
         android:onClick="btn_read"
         android:layout_marginTop="10dp"/>
+
+
 
 </LinearLayout>
